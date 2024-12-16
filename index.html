@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Boston's Cafe</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #6f4e37;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        header img {
+            border-radius: 50%;
+            margin-bottom: 0.5rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        header ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        header ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #ffc107;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #ffeb3b;
+        }
+
+        main {
+            margin: 2rem auto;
+            max-width: 900px;
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-heading {
+            text-align: center;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #6f4e37;
+            border-bottom: 2px solid #6f4e37;
+            padding-bottom: 0.5rem;
+        }
+
+        article {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            border-bottom: 1px dashed #ccc;
+            padding-bottom: 1rem;
+        }
+
+        article img {
+            border-radius: 10px;
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+        }
+
+        article h3 {
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .price {
+            font-style: italic;
+            font-weight: bold;
+            color: #6f4e37;
+        }
+
+        article p {
+            margin-top: 0.3rem;
+        }
+
+         {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background-color: #f4f4f4;
+            border-radius: 5px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 0.8rem;
+        }
+
+        input[type="number"] {
+            width: 100%;
+            padding: 0.5rem;
+            margin-top: 0.3rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input[type="radio"] {
+            margin-right: 0.5rem;
+        }
+
+        button {
+            background-color: #6f4e37;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border: none;
+            border-radius: 5px;
+            margin-top: 1rem;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #5c3b2a;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 1.5rem;
+            font-style: italic;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <img src="https://image.shutterstock.com/image-photo/cup-coffee-above-wooden-table-250nw-2472237979.jpg"
+         alt="Coffee Cup"
+         width="75"
+         height="75"
+         id="header-img">
+    <h1>Boston's Cafe</h1>
+    <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#order-form">Order Form</a></li>
+    </ul>
+</header>
+<main>
+    <section>
+        <h2 class="section-heading">Menu</h2>
+        <article>
+            <img src="https://media.istockphoto.com/id/1450118672/photo/roasted-coffee-beans-with-cappuccino-with-heart-foam-pattern-square-shape.jpg?s=612x612&w=is&k=20&c=9by3kv6_cegfvauH7su3q06xPxUs0ZJsD-CYVLt6fYA="
+                 alt="Cappuccino">
+            <div>
+                <h3>Classic Cappuccino</h3>
+                <p class="price">$4.50</p>
+                <p>A perfect blend of espresso, steamed milk, and velvety foam. Rich and creamy with a touch of cocoa.</p>
+            </div>
+        </article>
+        <article>
+            <img src="https://t3.ftcdn.net/jpg/07/14/05/98/360_F_714059884_xjAIr4KAYQM2t1bRTCXnXqVqV3Zagp4B.jpg"
+                 alt="Vanilla Latte">
+            <div>
+                <h3>Vanilla Latte</h3>
+                <p class="price">$5.00</p>
+                <p>Smooth espresso paired with steamed milk and a hint of sweet vanilla syrup. A delightful treat for any time of day.</p>
+            </div>
+        </article>
+        <article>
+            <img src="https://media.istockphoto.com/id/175515807/photo/espresso-shot-clipping-path.jpg?s=612x612&w=0&k=20&c=OH_nJS9Sjti1YLipNmFUq9Y3OC0XFHL-0YhD0vHgBUY="
+                 alt="Espresso Shot">
+            <div>
+                <h3>Espresso Shot</h3>
+                <p class="price">$3.00</p>
+                <p>Concentrated espresso for a quick, energizing boost.</p>
+            </div>
+        </article>
+        <article>
+            <img src="https://as2.ftcdn.net/v2/jpg/01/32/60/49/1000_F_132604954_fNZWsHvcytbTg8j953syhcQCBXoCWGo1.jpg"
+                 alt="Mocha Coffee">
+            <div>
+                <h3>Mocha Madness</h3>
+                <p class="price">$5.50</p>
+                <p>Espresso, chocolate, steamed milk, and whipped cream.</p>
+            </div>
+        </article>
+        <article>
+            <img src="https://thumbs.dreamstime.com/z/closeup-cup-coffee-latte-art-mocha-old-brown-wooden-background-square-frame-image-coffee-latte-art-mocha-old-118173970.jpg"
+                 alt="Freshly Brewed Coffee">
+            <div>
+                <h3>Freshly Brewed Coffee</h3>
+                <p class="price">$3.50</p>
+                <p>Rich, smooth, and aromatic coffee brew.</p>
+            </div>
+        </article>
+    </section>
+    <section>
+        <h2 class="section-heading">Place Your Order</h2>
+        <form id="order-form">
+            <label for="cappuccino">Classic Cappuccino:</label>
+            <input type="number" id="cappuccino" name="cappuccino" min="0" value="0">
+
+            <label for="vanillaLatte">Vanilla Latte:</label>
+            <input type="number" id="vanillaLatte" name="vanillaLatte" min="0" value="0">
+
+            <label for="espresso">Espresso Shot:</label>
+            <input type="number" id="espresso" name="espresso" min="0" value="0">
+
+            <label for = "mocha-madness">Mocha Madness:</label>
+            <input type="number" id="mocha-madness" name="mocha-madness" min="0" value="0">
+
+            <label for="Fresh-Coffee">Freshly Brewed Coffee:</label>
+            <input type="number" id="Fresh-Coffee" name="Fresh-Coffee" min="0" value="0">
+
+
+            <p>Please choose one side with your coffee:</p>
+            <label>
+                <input type="checkbox" name="coffee-side" value="cookie" required> Chocolate Chip Cookie ($1.99)
+            </label>
+            <label>
+                <input type="checkbox" name="coffee-side" value="muffin"> Blueberry Muffin ($2.49)
+            </label>
+            <label>
+                <input type="checkbox" name="coffee-side" value="croissant"> Butter Croissant ($2.99)
+            </label>
+            <br>
+            <textarea cols="30" rows="5" name="Special Requests" placeholder="Special Requests"></textarea>
+            <br>
+            <br>
+
+            <button type="submit">Go To Checkout</button>
+        </form>
+    </section>
+</main>
+<footer>
+    <p>Made with love by @bostonrayatt</p>
+</footer>
+</body>
+</html>
